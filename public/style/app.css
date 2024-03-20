@@ -560,6 +560,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.hidden {
+  display: none;
+}
+
 .font-Yekan {
   font-family: Yekan;
 }
