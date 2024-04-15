@@ -447,7 +447,7 @@ video {
 @font-face {
   font-family: "Yekan";
 
-  src: url("./assets/fonts/Yekan.ttf") format("ttf");
+  src: url("../public/assets/fonts/Yekan.ttf") format("ttf");
 
   font-display: swap;
 }
@@ -455,7 +455,15 @@ video {
 @font-face {
   font-family: "Lalezar";
 
-  src: url("./assets/fonts/Lalezar.ttf") format("ttf");
+  src: url("../public/assets/fonts/Lalezar.ttf") format("ttf");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Vazir Bold";
+
+  src: url("../public/assets/fonts/Vazir-Bold.ttf") format("ttf");
 
   font-display: swap;
 }
@@ -560,9 +568,29 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
+.top-9 {
+  top: 2.25rem;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -573,20 +601,16 @@ video {
   display: none;
 }
 
-.h-6 {
-  height: 1.5rem;
+.h-24 {
+  height: 6rem;
 }
 
 .h-8 {
   height: 2rem;
 }
 
-.h-24 {
-  height: 6rem;
-}
-
-.w-6 {
-  width: 1.5rem;
+.h-14 {
+  height: 3.5rem;
 }
 
 .w-8 {
@@ -601,6 +625,10 @@ video {
   width: 100%;
 }
 
+.w-px {
+  width: 1px;
+}
+
 .items-center {
   align-items: center;
 }
@@ -609,22 +637,55 @@ video {
   justify-content: space-between;
 }
 
+.gap-x-5 {
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+
 .gap-x-9 {
   -moz-column-gap: 2.25rem;
        column-gap: 2.25rem;
 }
 
-.gap-x-5 {
-  -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem;
+.gap-x-2 {
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+
+.gap-x-2\.5 {
+  -moz-column-gap: 0.625rem;
+       column-gap: 0.625rem;
+}
+
+.gap-x-10 {
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
 }
 
 .rounded-3xl {
   border-radius: 1.5rem;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .bg-black\/50 {
   background-color: rgb(0 0 0 / 0.5);
+}
+
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.bg-red-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
+.bg-white\/20 {
+  background-color: rgb(255 255 255 / 0.2);
 }
 
 .py-5 {
@@ -632,7 +693,8 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.pr-10 {
+.px-10 {
+  padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
 
@@ -640,6 +702,68 @@ video {
   padding-left: 1rem;
 }
 
+.pr-10 {
+  padding-right: 2.5rem;
+}
+
+.font-VazirBold {
+  font-family: Vazir Bold;
+}
+
+.font-Lalezar {
+  font-family: Lalezar;
+}
+
 .font-Yekan {
   font-family: Yekan;
+}
+
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-thin {
+  font-weight: 100;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.text-orange-300 {
+  --tw-text-opacity: 1;
+  color: rgb(253 186 116 / var(--tw-text-opacity));
+}
+
+.text-orange-200 {
+  --tw-text-opacity: 1;
+  color: rgb(254 215 170 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:bg-zinc-800) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
 }

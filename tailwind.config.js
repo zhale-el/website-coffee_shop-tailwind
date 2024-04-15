@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./public/**/*.{html,js}"],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -20,6 +21,7 @@ module.exports = {
       fontFamily: {
         Yekan: "Yekan",
         Lalezar: "Lalezar",
+        VazirBold: "Vazir Bold",
       },
     },
   },

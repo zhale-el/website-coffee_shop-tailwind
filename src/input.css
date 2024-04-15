@@ -5,13 +5,19 @@
 @layer base {
   @font-face {
     font-family: "Yekan";
-    src: url("./assets/fonts/Yekan.ttf") format("ttf");
+    src: url("../public/assets/fonts/Yekan.ttf") format("ttf");
     font-display: swap;
   }
 
   @font-face {
     font-family: "Lalezar";
-    src: url("./assets/fonts/Lalezar.ttf") format("ttf");
+    src: url("../public/assets/fonts/Lalezar.ttf") format("ttf");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Vazir Bold";
+    src: url("../public/assets/fonts/Vazir-Bold.ttf") format("ttf");
     font-display: swap;
   }
 }

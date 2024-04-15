@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style/app.css" />
     <link rel="icon" href="./assets/images/fav-icon.png" type="image/png" />
   </head>
-  <body class="font-Yekan">
+  <body class="bg-gray-100 dark:bg-zinc-800">
     <!-- All app icons -->
     <svg class="hidden">
       <symbol
@@ -88,18 +88,18 @@
 
     <!--------- header --------->
     <header
-      class="flex items-center w-[90%] h-24 pr-10 pl-4 py-5 mx-auto bg-black/50 rounded-3xl"
+      class="fixed top-9 right-0 left-0 flex items-center w-[90%] h-24 px-10 py-5 mx-auto bg-black/50 rounded-3xl"
     >
-      <div class="flex justify-between w-full">
+      <div class="flex items-center justify-between w-full">
         <!-- logo & menu -->
-        <nav class="flex gap-x-9">
+        <nav class="flex items-center gap-x-9">
           <!-- logo -->
           <div>
             <img src="./assets/images/app-logo.png" alt="Golden coffee" />
           </div>
           <!--  menu -->
-          <ul class="flex gap-x-9">
-            <li><a href="#">صفحه اصلی</a></li>
+          <ul class="flex gap-x-9 text-lg text-gray-300">
+            <li class="text-orange-200"><a href="#">صفحه اصلی</a></li>
             <!-- has submenu -->
             <li>
               <a href="#">فروشگاه</a>
@@ -121,9 +121,9 @@
         </nav>
 
         <!-- Cart & Them , login link -->
-        <div class="flex">
+        <div class="flex gap-x-10 text-lg text-orange-200">
           <!-- Cart Icon & Them switch btn -->
-          <div class="flex gap-x-5">
+          <div class="flex items-center gap-x-5">
             <!-- Cart -->
             <div>
               <svg class="w-8 h-8">
@@ -137,8 +137,11 @@
               </svg>
             </div>
           </div>
+          <!-- Dvide border -->
+          <span class="block w-px h-14 bg-white/20"></span>
+
           <!-- login link -->
-          <a href="#" class="flex">
+          <a href="#" class="flex items-center gap-x-2.5">
             <svg class="w-8 h-8">
               <use xlink:href="#arrow-in"></use>
             </svg>
